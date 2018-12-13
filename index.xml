@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+
+
+<books>
+    <book category="new">
+        <tytul>Władca Pierścieni</tytul>
+        <autor>Tolkien</autor>
+        <wydawnictwo>INSIGNIS</wydawnictwo>
+        <image >1.png</image>
+    </book>
+
+    <book category="new">
+        <tytul>Potter</tytul>
+        <autor>ROwling</autor>
+        <wydawnictwo>Terc</wydawnictwo>
+    </book>
+
+</books>

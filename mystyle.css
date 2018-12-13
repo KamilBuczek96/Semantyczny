@@ -1,0 +1,115 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+#header{
+    position:fixed;
+    width:100%;
+    top: 0;
+}
+
+#top{
+    width:100%;
+    height:100px;
+    background-color:black;
+    color:white;
+}
+
+#top img{
+    display: block;
+    width:200px;
+    margin:auto;
+    padding-top:20px;
+}
+
+#menu{
+    background-image: linear-gradient(darkgoldenrod,palegoldenrod);
+    height: 50px;
+}
+#menu ul{
+    margin: auto;
+    text-align: center;
+    width:400px;
+    padding: 15px;
+    list-style-type: none;
+}
+#menu ul li{
+    padding: 15px;
+    display: inline;
+}
+#menu ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+#content{
+    width:100%;
+    margin-top:150px;
+    height:1650px;
+}
+
+#content table{
+     border:1px solid black;
+}
+
+#content table td{
+    border:1px solid black;
+}
+
+#news{
+    width:100%;
+    height: 350px;
+    background-color:lightgoldenrodyellow;
+}
+
+#news table{
+    margin: auto;
+
+}
+#books{
+    width:100%;
+    height: 500px;
+    background-color: palegoldenrod;
+}
+#category{
+    width:100%;
+    height: 500px;
+    background-color:lightgoldenrodyellow;
+}
+#about{
+    width:100%;
+    height: 300px;
+    background-color: palegoldenrod;
+}
+
+#footer{
+    height: 50px;
+    background-color: black;
+    color:goldenrod;
+}
+
+#footer p{
+    text-align: center;
+    padding: 15px;
+}
+
+.slajdy{
+    display:none;
+    text-align: center;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    color: black;
+    font-size: 30px;
+}
+
+.next {
+    float:right;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
