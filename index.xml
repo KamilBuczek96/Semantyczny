@@ -1,19 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<!DOCTYPE books[
+<!ELEMENT books (book+)>
+<!ELEMENT book (tytul,autor,wydawnictwo,image,liczba_stron,okladka)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT wydawnictwo (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT liczba_stron (#PCDATA)>
+<!ELEMENT okladka (#PCDATA)>
+<!ATTLIST book category CDATA #IMPLIED
+        category2 CDATA #REQUIRED>
 
-
+        ]>
 <books>
-    <book category="new">
-        <tytul>Władca Pierścieni</tytul>
-        <autor>Tolkien</autor>
-        <wydawnictwo>INSIGNIS</wydawnictwo>
-        <image >1.png</image>
+    <book category2="fantasy">
+        <tytul>Achaja. Tom I</tytul>
+        <autor>A.Ziemiański</autor>
+        <wydawnictwo>Fabryka Słów</wydawnictwo>
+        <image >Images/Fantasy/achaja1.jpg</image>
+        <liczba_stron>696</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="informatyka">
+        <tytul>Algorytmy, struktury danych i techniki programowania</tytul>
+        <autor>Wróblewski Piotr</autor>
+        <wydawnictwo>Helion</wydawnictwo>
+        <image>Images/Informatyka/inf1.jpg</image>
+        <liczba_stron>416</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="przygodowe">
+        <tytul>Norweski dziennik. Obce ścieżki</tytul>
+        <autor>A.Pilipiuk</autor>
+        <wydawnictwo>Fabryka Słów</wydawnictwo>
+        <image>Images/Przygodowe/1.jpg</image>
+        <liczba_stron>416</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="wojenne">
+        <tytul>Zapomniany żołnierz</tytul>
+        <autor>G.Sarej</autor>
+        <wydawnictwo>Rebis</wydawnictwo>
+        <image>Images/Wojenne/1.jpg</image>
+        <liczba_stron>672</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="science_fiction">
+        <tytul>Diuna</tytul>
+        <autor>F.Herbert</autor>
+        <wydawnictwo>Rebis</wydawnictwo>
+        <image >Images/Science Fiction/1.jpg</image>
+        <liczba_stron>670</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="dramat">
+        <tytul>Makbet</tytul>
+        <autor>W.Shakespeare</autor>
+        <wydawnictwo>Arspol</wydawnictwo>
+        <image >Images/Dramat/1.jpg</image>
+        <liczba_stron>152</liczba_stron>
+        <okladka>Twarda</okladka>
     </book>
 
-    <book category="new">
-        <tytul>Potter</tytul>
-        <autor>ROwling</autor>
-        <wydawnictwo>Terc</wydawnictwo>
+
+    <book category2="fantasy">
+        <tytul>Świat inkwizytorów. Płomień i krzyż. Tom 1</tytul>
+        <autor>J.Piekara</autor>
+        <wydawnictwo>Fabryka Słów</wydawnictwo>
+        <image>Images/Fantasy/inkwizytor1.jpg</image>
+        <liczba_stron>334</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="informatyka">
+        <tytul>Język C++. Szkoła programowania</tytul>
+        <autor>S.Prata</autor>
+        <wydawnictwo>Helion</wydawnictwo>
+        <image>Images/Informatyka/cpp.jpg</image>
+        <liczba_stron>1200</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="przygodowe">
+        <tytul>Atlantydzki świat</tytul>
+        <autor>A.G Riddle </autor>
+        <wydawnictwo>Jaguar</wydawnictwo>
+        <image>Images/Przygodowe/2.jpg</image>
+        <liczba_stron>352</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="wojenne">
+        <tytul>Nie potrzebni</tytul>
+        <autor>M.Ogdowski</autor>
+        <wydawnictwo>Warbook</wydawnictwo>
+        <image>Images/Wojenne/2.jpg</image>
+        <liczba_stron>288</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="science_fiction">
+        <tytul>Solaris</tytul>
+        <autor>S.Lem</autor>
+        <wydawnictwo>Literackie</wydawnictwo>
+        <image >Images/Science Fiction/2.jpg</image>
+        <liczba_stron>340</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="dramat">
+        <tytul>Hamlet</tytul>
+        <autor>W.Shakespeare</autor>
+        <wydawnictwo>GREG</wydawnictwo>
+        <image >Images/Dramat/2.jpg</image>
+        <liczba_stron>192</liczba_stron>
+        <okladka>Miękka</okladka>
     </book>
 
+
+    <book category2="fantasy" category="new" >
+        <tytul>Ogień i krew</tytul>
+        <autor>G.R.R Martin</autor>
+        <wydawnictwo>Zysk i S-ka</wydawnictwo>
+        <image >Images/Fantasy/martin1.jpg</image>
+        <liczba_stron>600</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="informatyka" category="new">
+        <tytul>Unity i C#. Podstawy programowania gier</tytul>
+        <autor>E.Ross, J.Ross</autor>
+        <wydawnictwo>Helion</wydawnictwo>
+        <image>Images/Informatyka/unity.jpg</image>
+        <liczba_stron>176</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="przygodowe">
+        <tytul>Chancellor</tytul>
+        <autor>J.Verne</autor>
+        <wydawnictwo>Jamakasz</wydawnictwo>
+        <image>Images/Przygodowe/3.jpg</image>
+        <liczba_stron>188</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="wojenne">
+        <tytul>Krwawy śnieg</tytul>
+        <autor>G.Koshorrek</autor>
+        <wydawnictwo>Vesper</wydawnictwo>
+        <image>Images/Wojenne/3.jpg</image>
+        <liczba_stron>316</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="science_fiction">
+        <tytul>Metro 2033</tytul>
+        <autor>D.Glukhovsky</autor>
+        <wydawnictwo>Insignis</wydawnictwo>
+        <image >Images/Science Fiction/3.jpg</image>
+        <liczba_stron>592</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="dramat">
+        <tytul>Antygona</tytul>
+        <autor>Sofokles</autor>
+        <wydawnictwo>GREG</wydawnictwo>
+        <image >Images/Dramat/3.jpg</image>
+        <liczba_stron>104</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+
+    <book  category2="fantasy">
+        <tytul>Hobbit</tytul>
+        <autor>J.R.R Tolkien</autor>
+        <wydawnictwo>Iskry</wydawnictwo>
+        <image>Images/Fantasy/hobbit.jpg</image>
+        <liczba_stron>320</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="informatyka">
+        <tytul>HTML5. Tworzenie gier</tytul>
+        <autor>J.Seidelin</autor>
+        <wydawnictwo>Helion</wydawnictwo>
+        <image>Images/Informatyka/html5.jpg</image>
+        <liczba_stron>511</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="przygodowe" category="new">
+        <tytul>W pustyni i w puszczy</tytul>
+        <autor>H.Sienkiewicz</autor>
+        <wydawnictwo>Siedmioróg</wydawnictwo>
+        <image>Images/Przygodowe/4.jpg</image>
+        <liczba_stron>376</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category="news" category2="wojenne">
+        <tytul>Sny wojenne</tytul>
+        <autor>M.Harny</autor>
+        <wydawnictwo>Prószyński Media</wydawnictwo>
+        <image>Images/Wojenne/4.jpg</image>
+        <liczba_stron>520</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="science_fiction">
+        <tytul>Czarne Oceany</tytul>
+        <autor>D.Jacek</autor>
+        <wydawnictwo>Literackie</wydawnictwo>
+        <image >Images/Science Fiction/4.jpg</image>
+        <liczba_stron>494</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="dramat">
+        <tytul>Zemsta</tytul>
+        <autor>A.Fredro</autor>
+        <wydawnictwo>GREG</wydawnictwo>
+        <image >Images/Dramat/4.jpg</image>
+        <liczba_stron>150</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+
+    <book  category2="fantasy">
+        <tytul>Virion. Tom 2</tytul>
+        <autor>A.Ziemiański</autor>
+        <wydawnictwo>Fabryka Słów</wydawnictwo>
+        <image>Images/Fantasy/virion.jpg</image>
+        <liczba_stron>500</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="informatyka">
+        <tytul>Praktyczny kurs SQL</tytul>
+        <autor>Mendrala,Szeliga</autor>
+        <wydawnictwo>Helion</wydawnictwo>
+        <image>Images/Informatyka/sql.jpg</image>
+        <liczba_stron>336</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="przygodowe">
+        <tytul>Tomek na Czarnym Lądzie</tytul>
+        <autor>A.Szklarski</autor>
+        <wydawnictwo>MUZA S.A</wydawnictwo>
+        <image>Images/Przygodowe/7.jpg</image>
+        <liczba_stron>320</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="wojenne">
+        <tytul>Kamienie na szaniec</tytul>
+        <autor>A.Kamiński</autor>
+        <wydawnictwo>Nasza Księgarnia</wydawnictwo>
+        <image>Images/Wojenne/5.jpg</image>
+        <liczba_stron>240</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="science_fiction">
+        <tytul>Mówca umarłych</tytul>
+        <autor>O.S.Card</autor>
+        <wydawnictwo>Prószyński Media</wydawnictwo>
+        <image >Images/Science Fiction/5.jpg</image>
+        <liczba_stron>374</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category="news" category2="dramat">
+        <tytul>Dziady</tytul>
+        <autor>A.Mickiewicz</autor>
+        <wydawnictwo>Dragon</wydawnictwo>
+        <image >Images/Dramat/5.jpg</image>
+        <liczba_stron>304</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+
+    <book  category2="fantasy">
+        <tytul>Dzieci Hurina</tytul>
+        <autor>J.R.R Tolkien</autor>
+        <wydawnictwo>Prószyński Media</wydawnictwo>
+        <image>Images/Fantasy/hurina.jpg</image>
+        <liczba_stron>272</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="informatyka">
+        <tytul>Informatyka Europejczyka</tytul>
+        <autor>J.Pańczyk</autor>
+        <wydawnictwo>Helion</wydawnictwo>
+        <image>Images/Informatyka/7.jpg</image>
+        <liczba_stron>176</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="przygodowe">
+        <tytul>Pinokio</tytul>
+        <autor>C.Collodi</autor>
+        <wydawnictwo>GREG</wydawnictwo>
+        <image>Images/Przygodowe/6.jpg</image>
+        <liczba_stron>126</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="wojenne">
+        <tytul>Inny świat</tytul>
+        <autor>G.Herling-Grudziński</autor>
+        <wydawnictwo>Literacki</wydawnictwo>
+        <image>Images/Wojenne/6.jpg</image>
+        <liczba_stron>354</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category="news" category2="science_fiction">
+        <tytul>Więzień labiryntu</tytul>
+        <autor>J.Dasher</autor>
+        <wydawnictwo>Papierowy Księżyc</wydawnictwo>
+        <image >Images/Science Fiction/6.jpg</image>
+        <liczba_stron>424</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="dramat">
+        <tytul>Balladyna</tytul>
+        <autor>J.Słowacki</autor>
+        <wydawnictwo>GREG</wydawnictwo>
+        <image >Images/Dramat/6.jpg</image>
+        <liczba_stron>152</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+
+    <book  category2="fantasy">
+        <tytul>Arthas. Przebudzenie Króla Lisza</tytul>
+        <autor>Ch.Golden</autor>
+        <wydawnictwo>Insignis</wydawnictwo>
+        <image>Images/Fantasy/arthas.jpg</image>
+        <liczba_stron>368</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="informatyka">
+        <tytul>Zrozumieć BPMN</tytul>
+        <autor>S.Drejewicz</autor>
+        <wydawnictwo>Helion</wydawnictwo>
+        <image>Images/Informatyka/2.jpg</image>
+        <liczba_stron>144</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="przygodowe">
+        <tytul>Winnetou</tytul>
+        <autor>K.May</autor>
+        <wydawnictwo>GREG</wydawnictwo>
+        <image>Images/Przygodowe/5.jpg</image>
+        <liczba_stron>884</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="wojenne">
+        <tytul>Chłopiec w pasiastej piżamie</tytul>
+        <autor>J.Boyne</autor>
+        <wydawnictwo>Replika</wydawnictwo>
+        <image>Images/Wojenne/7.jpg</image>
+        <liczba_stron>204</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
+    <book category2="science_fiction">
+        <tytul>Człowiek z wysokiego zamku</tytul>
+        <autor>P.K.Dick</autor>
+        <wydawnictwo>Rebis</wydawnictwo>
+        <image >Images/Science Fiction/7.jpg</image>
+        <liczba_stron>336</liczba_stron>
+        <okladka>Twarda</okladka>
+    </book>
+    <book category2="dramat">
+        <tytul>Kartoteka</tytul>
+        <autor>T.Różewicz</autor>
+        <wydawnictwo>Dolnośląskie</wydawnictwo>
+        <image >Images/Dramat/7.jpg</image>
+        <liczba_stron>92</liczba_stron>
+        <okladka>Miękka</okladka>
+    </book>
 </books>
